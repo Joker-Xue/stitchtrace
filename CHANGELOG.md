@@ -1,6 +1,10 @@
 # Changelog
 
-## 1.0.0 (unreleased)
+## 1.0.0 (2026-10-24)
+First public release, accompanying the SoftwareX submission. The experiment bundles archived at
+https://doi.org/10.5281/zenodo.23599583 were captured with the pre-release `1.0.0.dev0`, whose code
+differs from 1.0.0 only in the version string; their evaluations were recomputed with this code.
+
 - Policy interface: `register_policy`, `available_policies`, `run_policy`; `replay` accepts any
   registered name or callable plus numeric parameters.
 - New ownership policies `crop`, `iou_merge`, `center`; new graph policy `relink` with a

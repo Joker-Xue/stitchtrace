@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use StitchTrace, please cite it as below."
+title: "StitchTrace: inference-free replay and error attribution for tiled instance segmentation"
+type: software
+authors:
+  - family-names: Lin
+    given-names: Xushen
+    email: 2406010123@hhu.edu.cn
+    affiliation: "College of Computer Science and Software Engineering, Hohai University"
+    orcid: "https://orcid.org/0009-0008-8616-5346"
+version: 1.0.0
+date-released: 2026-10-24
+license: MIT
+repository-code: "https://github.com/Joker-Xue/stitchtrace"
+keywords:
+  - instance segmentation
+  - tiled inference
+  - stitching
+  - provenance
+  - microscopy
+  - reproducibility

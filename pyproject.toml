@@ -3,12 +3,12 @@ requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 [project]
 name = "stitchtrace"
-version = "1.0.0.dev0"
+version = "1.0.0"
 description = "Record, replay and attribute tile-assembly decisions of tiled instance segmentation without re-running inference"
 requires-python = ">=3.11"
 readme = "README.md"
 license = "MIT"
-license-files = ["LICENSE.txt"]
+license-files = ["Licence.txt"]
 authors = [{name = "Xushen Lin", email = "2406010123@hhu.edu.cn"}]
 keywords = ["instance segmentation", "tiled inference", "stitching", "provenance", "microscopy", "reproducibility"]
 classifiers = [

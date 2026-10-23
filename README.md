@@ -133,5 +133,5 @@ The recorded bundles and result tables of the accompanying paper are archived as
 > Lin, X. (2026). *StitchTrace v1 experiment data: recorded tile-assembly bundles and results*
 > (Version v1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23599583
 
-Citation details of the software and paper will be added on publication. StitchTrace is released under the [MIT License](LICENSE.txt).
+Citation details of the software and paper will be added on publication. StitchTrace is released under the [MIT License](Licence.txt).
 Third-party packages, models and datasets keep their own licenses; copies of the relevant notices are in [docs/third-party](docs/third-party).
