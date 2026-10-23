@@ -5,6 +5,9 @@ Protocols were fixed before the formal runs: [PROTOCOL.md](PROTOCOL.md) (2D, BBB
 [DEVIATIONS.md](DEVIATIONS.md); exploratory analyses are reported in
 [ADDENDUM-A1-RESULT.md](ADDENDUM-A1-RESULT.md) and [ADDENDUM-A2-RESULT.md](ADDENDUM-A2-RESULT.md).
 Results are in [`runs/v1`](../../runs/v1).
+All captured bundles and untiled predictions are archived on Zenodo (https://doi.org/10.5281/zenodo.23599583):
+with them every result can be replayed, compared and re-evaluated without a model, a GPU or
+inference (see "Re-evaluating the archived bundles" below).
 
 ## Environment
 
@@ -41,3 +44,18 @@ python summarize.py && python figures.py && python figure_architecture.py
 
 Every run is resumable: completed images are skipped and captures resume from cached block
 predictions. Replay, comparison and attribution of saved bundles need NumPy only.
+
+## Re-evaluating the archived bundles
+
+Download the record from https://doi.org/10.5281/zenodo.23599583, check the files with `shasum -a 256 -c SHA256SUMS.txt`,
+extract every part of an arm into `runs/v1/` (each part is an independent ZIP; together they restore
+`<arm>/bundles` and `<arm>/untiled`) and run from `experiments/v1`:
+
+```bash
+python reevaluate.py D5
+python summarize.py
+```
+
+`reevaluate.py` reads the dataset files listed under "Data and models" (images, masks and the
+test split) to recompute the "vs annotation" columns; no model or GPU is needed. Single bundles can
+be verified, replayed and compared with the `stitchtrace` CLI alone (see the archive README).

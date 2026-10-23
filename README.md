@@ -30,10 +30,12 @@ inference stack.
 ## Installation
 
 ```bash
-pip install stitchtrace                      # core: NumPy only (replay, compare, attribute, CLI)
-pip install "stitchtrace[stardist]"          # + capture from StarDist
-pip install "stitchtrace[cellpose]"          # + capture from Cellpose distributed segmentation
+pip install git+https://github.com/Joker-Xue/stitchtrace                          # core: NumPy only (replay, compare, attribute, CLI)
+pip install "stitchtrace[stardist] @ git+https://github.com/Joker-Xue/stitchtrace"  # + capture from StarDist
+pip install "stitchtrace[cellpose] @ git+https://github.com/Joker-Xue/stitchtrace"  # + capture from Cellpose distributed segmentation
 ```
+
+StitchTrace is not yet published on PyPI.
 
 Python ≥ 3.11 on Linux or macOS (capture uses POSIX file locks; Windows is not supported).
 Capture adapters check the installed upstream version, source hashes and hooked signatures against
@@ -110,7 +112,8 @@ contacts narrower than the shrink margin.
 ## Documentation
 
 - [API and CLI reference](docs/API.md) · [bundle schema](docs/SCHEMA.md)
-- [Experiments](experiments/v1/README.md) and [results](runs/v1/PROVENANCE.md) of the accompanying paper
+- [Experiments](experiments/v1/README.md) and [results](runs/v1/PROVENANCE.md) of the accompanying paper;
+  all recorded bundles of these experiments are archived on Zenodo (https://doi.org/10.5281/zenodo.23599583)
 - [Change history](CHANGELOG.md); pre-1.0 audit material is kept in [docs/history](docs/history)
 
 ## Limitations
@@ -125,5 +128,10 @@ contacts narrower than the shrink margin.
 
 ## Citation and license
 
-Citation details will be added on publication. StitchTrace is released under the [MIT License](LICENSE.txt).
+The recorded bundles and result tables of the accompanying paper are archived as:
+
+> Lin, X. (2026). *StitchTrace v1 experiment data: recorded tile-assembly bundles and results*
+> (Version v1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23599583
+
+Citation details of the software and paper will be added on publication. StitchTrace is released under the [MIT License](LICENSE.txt).
 Third-party packages, models and datasets keep their own licenses; copies of the relevant notices are in [docs/third-party](docs/third-party).

@@ -14,8 +14,10 @@ These files are the outputs of the experiments in `experiments/v1` (protocols `P
 
 The experiments were run from a private development history before this repository was created.
 The deviation records refer to that history; the code in this release is the code that produced
-the final evaluations. Captured bundles and untiled predictions (about 8.4 GB) are archived
-separately; their location will be given in the README and the paper.
+the final evaluations. Captured bundles and untiled predictions are archived on Zenodo as
+15 ZIP files with SHA-256 checksums:
+https://doi.org/10.5281/zenodo.23599583 (CC-BY-4.0). The archive README explains how to verify and replay the
+bundles and how to recompute these tables (with the dataset files) using `experiments/v1/reevaluate.py` and `summarize.py`.
 
 Datasets: BBBC039 (https://bbbc.broadinstitute.org/BBBC039, CC0) and the C. elegans nuclei
 dataset (Zenodo record 5942575, CC-BY-4.0). Models: StarDist `2D_versatile_fluo`
