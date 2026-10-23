@@ -1,5 +1,7 @@
 # StitchTrace
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23602983.svg)](https://doi.org/10.5281/zenodo.23602983)
+
 **Record, replay and attribute the tile-assembly decisions of tiled instance segmentation — without re-running inference.**
 
 Large microscopy images are segmented block by block and the per-block labels are then stitched
@@ -128,10 +130,15 @@ contacts narrower than the shrink margin.
 
 ## Citation and license
 
+If you use StitchTrace, please cite the software release:
+
+> Lin, X. (2026). *StitchTrace: inference-free replay and error attribution for tiled instance
+> segmentation* (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23602983
+
 The recorded bundles and result tables of the accompanying paper are archived as:
 
 > Lin, X. (2026). *StitchTrace v1 experiment data: recorded tile-assembly bundles and results*
 > (Version v1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23599583
 
-Citation details of the software and paper will be added on publication. StitchTrace is released under the [MIT License](Licence.txt).
+Details of the accompanying paper will be added on publication. StitchTrace is released under the [MIT License](Licence.txt).
 Third-party packages, models and datasets keep their own licenses; copies of the relevant notices are in [docs/third-party](docs/third-party).

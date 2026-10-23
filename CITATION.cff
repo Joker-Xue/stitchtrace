@@ -9,6 +9,7 @@ authors:
     affiliation: "College of Computer Science and Software Engineering, Hohai University"
     orcid: "https://orcid.org/0009-0008-8616-5346"
 version: 1.0.0
+doi: 10.5281/zenodo.23602983
 date-released: 2026-10-24
 license: MIT
 repository-code: "https://github.com/Joker-Xue/stitchtrace"
