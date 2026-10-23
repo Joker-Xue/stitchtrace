@@ -1,0 +1,16 @@
+{
+  "cellpose": {
+    "version": "4.2.1.1",
+    "files": {
+      "cellpose.contrib.distributed_segmentation": "b5107658b6cec2998e6326a6227517412269b5f01652d59fb8f83d1ee253c724"
+    }
+  },
+  "stardist": {
+    "version": "0.9.2",
+    "files": {
+      "stardist.big": "85390c50e77a3102482eb7c6d4fc87fab070caae845de00891e755e5c3383832",
+      "stardist.models.base": "f88dff51e13dfbc36c49938391ea3e4c782f9e46771e6ab84e0b76ba3be65d4d",
+      "stardist.matching": "30ec25b1ce0e6ef58311629eeb34738ea2c03703f269924102b7a595782beeb4"
+    }
+  }
+}

@@ -1,0 +1,209 @@
+{
+ "volume": "mir61L1_1228061",
+ "shape": [
+  140,
+  140,
+  1024
+ ],
+ "model_diameter": null,
+ "untiled_seconds": 880.4991672090255,
+ "untiled_vs_truth": {
+  "reference_objects": 547,
+  "candidate_objects": 558,
+  "tp": 474,
+  "fp": 84,
+  "fn": 73,
+  "f1": 0.857918552036199,
+  "mean_matched_iou": 0.713755999793229,
+  "split": 35,
+  "merge": 27
+ },
+ "blocks": {
+  "chain": {
+   "block_size": [
+    140,
+    140,
+    128
+   ],
+   "capture_seconds": 1400.9670768748038,
+   "blocks": 8,
+   "bundle_bytes": 324342642,
+   "recorded_edges": 54,
+   "relink_edges": 54,
+   "edge_sets_equal": true,
+   "linked_groups_equal": true,
+   "native_relink_outputs_equal": true,
+   "policies": {
+    "disable_edges": {
+     "params": {},
+     "replay_seconds_median": 0.774829417001456,
+     "replay_seconds": [
+      0.7895285421982408,
+      0.774829417001456,
+      0.7765188752673566,
+      0.7652038750238717,
+      0.7664287080988288
+     ],
+     "vs_untiled": {
+      "reference_objects": 558,
+      "candidate_objects": 622,
+      "tp": 548,
+      "fp": 74,
+      "fn": 10,
+      "f1": 0.9288135593220339,
+      "mean_matched_iou": 0.9071176561701174,
+      "split": 32,
+      "merge": 8
+     },
+     "attribution_vs_untiled": {
+      "seam_split": 30,
+      "seam_other": 0,
+      "interior": 7,
+      "seam_extra": 70,
+      "interior_extra": 4,
+      "seam_objects": 78
+     },
+     "vs_truth": {
+      "reference_objects": 547,
+      "candidate_objects": 622,
+      "tp": 459,
+      "fp": 163,
+      "fn": 88,
+      "f1": 0.7852865697177075,
+      "mean_matched_iou": 0.6986318797336617,
+      "split": 46,
+      "merge": 24
+     }
+    },
+    "native": {
+     "params": {},
+     "replay_seconds_median": 0.9501186669804156,
+     "replay_seconds": [
+      0.9620783748105168,
+      0.9665619158186018,
+      0.9501186669804156,
+      0.9363450421951711,
+      0.9467612081207335
+     ],
+     "vs_untiled": {
+      "reference_objects": 558,
+      "candidate_objects": 568,
+      "tp": 547,
+      "fp": 21,
+      "fn": 11,
+      "f1": 0.9715808170515098,
+      "mean_matched_iou": 0.9251077225354436,
+      "split": 4,
+      "merge": 9
+     },
+     "attribution_vs_untiled": {
+      "seam_split": 2,
+      "seam_other": 2,
+      "interior": 8,
+      "seam_extra": 17,
+      "interior_extra": 4,
+      "seam_objects": 78
+     },
+     "vs_truth": {
+      "reference_objects": 547,
+      "candidate_objects": 568,
+      "tp": 471,
+      "fp": 97,
+      "fn": 76,
+      "f1": 0.8448430493273542,
+      "mean_matched_iou": 0.7053749865243641,
+      "split": 27,
+      "merge": 25
+     }
+    },
+    "relink": {
+     "params": {
+      "threshold": 1.0
+     },
+     "replay_seconds_median": 0.775083958171308,
+     "replay_seconds": [
+      0.8610936249606311,
+      0.7805435839109123,
+      0.7663965001702309,
+      0.7689903751015663,
+      0.775083958171308
+     ],
+     "vs_untiled": {
+      "reference_objects": 558,
+      "candidate_objects": 568,
+      "tp": 547,
+      "fp": 21,
+      "fn": 11,
+      "f1": 0.9715808170515098,
+      "mean_matched_iou": 0.9251077225354436,
+      "split": 4,
+      "merge": 9
+     },
+     "attribution_vs_untiled": {
+      "seam_split": 2,
+      "seam_other": 2,
+      "interior": 8,
+      "seam_extra": 17,
+      "interior_extra": 4,
+      "seam_objects": 78
+     },
+     "vs_truth": {
+      "reference_objects": 547,
+      "candidate_objects": 568,
+      "tp": 471,
+      "fp": 97,
+      "fn": 76,
+      "f1": 0.8448430493273542,
+      "mean_matched_iou": 0.7053749865243641,
+      "split": 27,
+      "merge": 25
+     }
+    },
+    "relink_absorb": {
+     "params": {},
+     "replay_seconds_median": 0.9843466249294579,
+     "replay_seconds": [
+      1.1482835407368839,
+      0.9895374579355121,
+      0.9843466249294579,
+      0.9745653751306236,
+      0.9740940420888364
+     ],
+     "vs_untiled": {
+      "reference_objects": 558,
+      "candidate_objects": 558,
+      "tp": 547,
+      "fp": 11,
+      "fn": 11,
+      "f1": 0.9802867383512545,
+      "mean_matched_iou": 0.9252167830459103,
+      "split": 4,
+      "merge": 9
+     },
+     "attribution_vs_untiled": {
+      "seam_split": 2,
+      "seam_other": 2,
+      "interior": 8,
+      "seam_extra": 7,
+      "interior_extra": 4,
+      "seam_objects": 78
+     },
+     "vs_truth": {
+      "reference_objects": 547,
+      "candidate_objects": 558,
+      "tp": 471,
+      "fp": 87,
+      "fn": 76,
+      "f1": 0.8524886877828054,
+      "mean_matched_iou": 0.7053622537558766,
+      "split": 27,
+      "merge": 25
+     }
+    }
+   }
+  }
+ },
+ "reevaluated": [
+  "D5"
+ ]
+}

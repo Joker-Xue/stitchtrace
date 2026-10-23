@@ -1,0 +1,196 @@
+{
+ "image": "IXMtest_F04_s5_w1D94DA1A2-873C-44B3-80EB-36DC2A97E9A3",
+ "untiled_seconds": 5.516291500069201,
+ "untiled_vs_truth": {
+  "reference_objects": 116,
+  "candidate_objects": 107,
+  "tp": 106,
+  "fp": 1,
+  "fn": 10,
+  "f1": 0.9506726457399103,
+  "mean_matched_iou": 0.9376702595005743,
+  "split": 0,
+  "merge": 1
+ },
+ "blocks": [
+  {
+   "block_size": 256,
+   "capture_seconds": 12.905082625336945,
+   "blocks": 9,
+   "recorded_edges": 1,
+   "bundle_bytes": 9027631,
+   "policies": {
+    "disable_edges": {
+     "params": {},
+     "replay_seconds_median": 0.018175209406763315,
+     "replay_seconds": [
+      0.018177499994635582,
+      0.018489249981939793,
+      0.018175209406763315,
+      0.017955957911908627,
+      0.018156624864786863
+     ],
+     "vs_untiled": {
+      "reference_objects": 107,
+      "candidate_objects": 130,
+      "tp": 107,
+      "fp": 23,
+      "fn": 0,
+      "f1": 0.9029535864978903,
+      "mean_matched_iou": 0.9409769161974858,
+      "split": 12,
+      "merge": 0
+     },
+     "attribution_vs_untiled": {
+      "seam_split": 12,
+      "seam_other": 0,
+      "interior": 0,
+      "seam_extra": 22,
+      "interior_extra": 1,
+      "seam_objects": 22
+     },
+     "vs_truth": {
+      "reference_objects": 116,
+      "candidate_objects": 130,
+      "tp": 107,
+      "fp": 23,
+      "fn": 9,
+      "f1": 0.8699186991869918,
+      "mean_matched_iou": 0.8952540698889775,
+      "split": 12,
+      "merge": 2
+     }
+    },
+    "native": {
+     "params": {},
+     "replay_seconds_median": 0.027923082932829857,
+     "replay_seconds": [
+      0.032664958853274584,
+      0.02823658287525177,
+      0.027923082932829857,
+      0.027393499854952097,
+      0.02702658297494054
+     ],
+     "vs_untiled": {
+      "reference_objects": 107,
+      "candidate_objects": 129,
+      "tp": 107,
+      "fp": 22,
+      "fn": 0,
+      "f1": 0.9067796610169492,
+      "mean_matched_iou": 0.9409769161974858,
+      "split": 12,
+      "merge": 0
+     },
+     "attribution_vs_untiled": {
+      "seam_split": 12,
+      "seam_other": 0,
+      "interior": 0,
+      "seam_extra": 21,
+      "interior_extra": 1,
+      "seam_objects": 22
+     },
+     "vs_truth": {
+      "reference_objects": 116,
+      "candidate_objects": 129,
+      "tp": 107,
+      "fp": 22,
+      "fn": 9,
+      "f1": 0.8734693877551021,
+      "mean_matched_iou": 0.8952540698889775,
+      "split": 12,
+      "merge": 2
+     }
+    },
+    "relink": {
+     "params": {
+      "threshold": 1.0
+     },
+     "replay_seconds_median": 0.020116459112614393,
+     "replay_seconds": [
+      0.023662500083446503,
+      0.02012879168614745,
+      0.01976662501692772,
+      0.019778875168412924,
+      0.020116459112614393
+     ],
+     "vs_untiled": {
+      "reference_objects": 107,
+      "candidate_objects": 108,
+      "tp": 107,
+      "fp": 1,
+      "fn": 0,
+      "f1": 0.9953488372093023,
+      "mean_matched_iou": 0.9809583626775079,
+      "split": 0,
+      "merge": 0
+     },
+     "attribution_vs_untiled": {
+      "seam_split": 0,
+      "seam_other": 0,
+      "interior": 0,
+      "seam_extra": 0,
+      "interior_extra": 1,
+      "seam_objects": 22
+     },
+     "vs_truth": {
+      "reference_objects": 116,
+      "candidate_objects": 108,
+      "tp": 107,
+      "fp": 1,
+      "fn": 9,
+      "f1": 0.9553571428571429,
+      "mean_matched_iou": 0.9317327628352657,
+      "split": 0,
+      "merge": 2
+     }
+    },
+    "relink_absorb": {
+     "params": {},
+     "replay_seconds_median": 0.02123466692864895,
+     "replay_seconds": [
+      0.026633833069354296,
+      0.02105745766311884,
+      0.025709375273436308,
+      0.02123466692864895,
+      0.021167375147342682
+     ],
+     "vs_untiled": {
+      "reference_objects": 107,
+      "candidate_objects": 108,
+      "tp": 107,
+      "fp": 1,
+      "fn": 0,
+      "f1": 0.9953488372093023,
+      "mean_matched_iou": 0.9809583626775079,
+      "split": 0,
+      "merge": 0
+     },
+     "attribution_vs_untiled": {
+      "seam_split": 0,
+      "seam_other": 0,
+      "interior": 0,
+      "seam_extra": 0,
+      "interior_extra": 1,
+      "seam_objects": 22
+     },
+     "vs_truth": {
+      "reference_objects": 116,
+      "candidate_objects": 108,
+      "tp": 107,
+      "fp": 1,
+      "fn": 9,
+      "f1": 0.9553571428571429,
+      "mean_matched_iou": 0.9317327628352657,
+      "split": 0,
+      "merge": 2
+     }
+    }
+   }
+  }
+ ],
+ "reevaluated": [
+  "D4",
+  "D5"
+ ]
+}

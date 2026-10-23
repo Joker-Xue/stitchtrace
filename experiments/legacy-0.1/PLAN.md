@@ -1,0 +1,11 @@
+# Frozen finite experiment plan
+
+BBBC039v1 official CC0, fixed lexicographically first TWO filenames in official validation split and first TWO in test split. Choose by metadata only before opening images or running predictions; no replacements if failure. No training images used. Download official images/masks/metadata archives with cumulative raw budget150MiB (including previously recorded905397B), enforce stream cap; extracted total<1GiB. Only selected4 image/mask pairs retained decoded, archive originals preserved. Decode mask first channel then skimage.measure.label per official example.
+
+Same existing StarDist2D versatile_fluo v0.1 weights, no model download. Full raw image global normalize p1/99.8; axesYX, block320,min_overlap64,context96, native grid, default pretrained thresholds. Native reference, instrumented package, full independent handwritten baseline use identical normalization/parameters/model; each exactly one run per image. No parameter search; NotFullyVisible or any error preserved and no substitute image. Fixed policy retain_all for measured perturbation, no accuracy claim.
+
+2D/3D Cellpose labeloracle: clean, narrow seam, upstream-error within core, three-block transitive component. Actual installed native driver with fixed diameter2/overlap4 and compact predictor IDs. 3D coordinates spacing(2,0.5,0.5), no physical calibration inferred for real images. Oracle outputs clearly separate from real inference.
+
+Baseline starts from same native image/model or oracle input, implements its own runtime interception, persistence, compatibility checks and offline reconstruction; may share third-party dependencies and experimental inputs, never read stitchtrace bundle. Report its authored code and preparation, not just terminal cells. No invented user times.
+
+Measure wallclock via perf_counter, peak RSS in subprocess via resource (macOS bytes), output storage bytes, partition/size/centroid equivalence, offline success and explicit corruption/version/missing-dependency rejection. Single runs descriptive, no statistical superiority claims. Include setup/capture/replay stages separately; warm model/cache state stated. All failures remain in report denominators. Observe2D real model only; 3D labeloracle only. Existing pilots are development evidence, these4 fixed images finite evaluation not independent proof of generality.

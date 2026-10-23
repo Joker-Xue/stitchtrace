@@ -1,0 +1,122 @@
+{
+  "validation-0": {
+    "gt": 110,
+    "untiled": 104,
+    "tiled512": 104,
+    "untiled_vs_gt": {
+      "tp": 104,
+      "fp": 0,
+      "fn": 6,
+      "f1": 0.972,
+      "panoptic": 0.8949
+    },
+    "tiled_vs_gt": {
+      "tp": 104,
+      "fp": 0,
+      "fn": 6,
+      "f1": 0.972,
+      "panoptic": 0.8949
+    },
+    "tiled_vs_untiled": {
+      "tp": 104,
+      "fp": 0,
+      "fn": 0,
+      "f1": 1.0,
+      "panoptic": 1.0
+    },
+    "img_stats": {
+      "min": -0.011959522031247616,
+      "max": 3.6448941230773926
+    }
+  },
+  "validation-1": {
+    "gt": 104,
+    "untiled": 94,
+    "tiled512": 94,
+    "untiled_vs_gt": {
+      "tp": 93,
+      "fp": 1,
+      "fn": 11,
+      "f1": 0.9394,
+      "panoptic": 0.8604
+    },
+    "tiled_vs_gt": {
+      "tp": 93,
+      "fp": 1,
+      "fn": 11,
+      "f1": 0.9394,
+      "panoptic": 0.8604
+    },
+    "tiled_vs_untiled": {
+      "tp": 94,
+      "fp": 0,
+      "fn": 0,
+      "f1": 1.0,
+      "panoptic": 1.0
+    },
+    "img_stats": {
+      "min": -0.014884053729474545,
+      "max": 2.4357316493988037
+    }
+  },
+  "test-0": {
+    "gt": 156,
+    "untiled": 150,
+    "tiled512": 150,
+    "untiled_vs_gt": {
+      "tp": 147,
+      "fp": 3,
+      "fn": 9,
+      "f1": 0.9608,
+      "panoptic": 0.8785
+    },
+    "tiled_vs_gt": {
+      "tp": 147,
+      "fp": 3,
+      "fn": 9,
+      "f1": 0.9608,
+      "panoptic": 0.8785
+    },
+    "tiled_vs_untiled": {
+      "tp": 150,
+      "fp": 0,
+      "fn": 0,
+      "f1": 1.0,
+      "panoptic": 1.0
+    },
+    "img_stats": {
+      "min": -0.01886792480945587,
+      "max": 1.7602664232254028
+    }
+  },
+  "test-1": {
+    "gt": 69,
+    "untiled": 31,
+    "tiled512": 31,
+    "untiled_vs_gt": {
+      "tp": 29,
+      "fp": 2,
+      "fn": 40,
+      "f1": 0.58,
+      "panoptic": 0.4396
+    },
+    "tiled_vs_gt": {
+      "tp": 29,
+      "fp": 2,
+      "fn": 40,
+      "f1": 0.58,
+      "panoptic": 0.4396
+    },
+    "tiled_vs_untiled": {
+      "tp": 31,
+      "fp": 0,
+      "fn": 0,
+      "f1": 1.0,
+      "panoptic": 1.0
+    },
+    "img_stats": {
+      "min": -0.01127395685762167,
+      "max": 4.242390155792236
+    }
+  }
+}
