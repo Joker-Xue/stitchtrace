@@ -3,7 +3,7 @@ requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 [project]
 name = "stitchtrace"
-version = "1.0.0"
+version = "1.0.1"
 description = "Record, replay and attribute tile-assembly decisions of tiled instance segmentation without re-running inference"
 requires-python = ">=3.11"
 readme = "README.md"

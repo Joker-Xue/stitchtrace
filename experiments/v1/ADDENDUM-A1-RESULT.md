@@ -6,9 +6,12 @@ Run: all 50 test images, block 256, one global percentile normalisation (1–99.
 | normalisation | policy | F1 vs untiled | split | seam_split | seam_other | interior |
 |---|---|---|---|---|---|---|
 | per crop (main arm) | native | 0.9019 | 546 | 533 | 2 | 28 |
-| per crop (main arm) | relink | 0.9891 | 15 | 2 | 2 | 28 |
+| per crop (main arm) | relink | 0.9895 | 15 | 2 | 2 | 28 |
 | global | native | 0.9013 | 548 | 533 | 2 | 30 |
-| global | relink | 0.9888 | 17 | 2 | 2 | 30 |
+| global | relink | 0.9893 | 17 | 2 | 2 | 30 |
+
+(1.0.1: the two relink F1 values were corrected from 0.9891 and 0.9888, written before the final
+re-evaluation D5, to the values of the archived result files.)
 
 **The hypothesis is rejected.** Interior discrepancies did not fall (28 → 30); the first five
 images happened to show none, which is why the early impression was misleading. Per-crop

@@ -34,7 +34,7 @@ threshold)`.
 ## Comparison and attribution
 
 `compare(reference, candidate, iou=0.5, cover=0.2) -> dict`
-Object matching at IoU ≥ `iou` (one-to-one because `iou` ≥ 0.5): `tp`, `fp`, `fn`, precision,
+One-to-one object matching at IoU ≥ `iou` (`iou` ≥ 0.5; pairs are taken in the order IoU descending, reference ID, candidate ID, so an exact tie at 0.5 — one object formed by two equal halves of the other side — keeps one pair; available as `stitchtrace.compare.match`): `tp`, `fp`, `fn`, precision,
 recall, F1, mean matched IoU. A reference object is *split* when ≥ 2 candidate objects each cover
 ≥ `cover` of it; a candidate object is a *merge* when it covers ≥ `cover` of each of ≥ 2 reference
 objects. Lists of split, merge and unmatched IDs are included.

@@ -46,7 +46,7 @@ Capture adapters check the installed upstream version, source hashes and hooked 
 ## Quickstart (NumPy only, ~1 minute)
 
 The example writes a synthetic bundle whose recorded graph has no cross-block edges — the state
-Cellpose 4.2.1.1 produces for 2D images (MouseLand/cellpose#1364, #1480).
+Cellpose 4.2.1.1 produces for 2D images (see MouseLand/cellpose#1480).
 
 ```bash
 python examples/make_demo_bundle.py demo          # 12 discs cut into 22 recorded pieces
@@ -106,6 +106,7 @@ run with the same contract is reused, and a conflicting contract is refused.
 | graph | `native` | recorded face-adjacency edges |
 | graph | `disable_edges` | no cross-block linking |
 | graph | `relink` | edges recomputed from the packed labels with a per-pixel face shrink (`threshold`) |
+| graph | `relink_absorb` | `relink`, then seam fragments smaller than `min_size` joined to the piece across the seam they touch most |
 
 `relink` reproduces the upstream face shrink exactly on 3D faces and differs only where the
 upstream code collapses a 1-pixel 2D face to a scalar gradient. Like upstream, it does not link

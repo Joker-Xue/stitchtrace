@@ -17,18 +17,43 @@ def overlap_table(reference, candidate):
     return pairs[0][keep], pairs[1][keep], counts[keep], ra, ca
 
 
+def match(ri, ci, ious, iou=0.5):
+    """One-to-one matching of the pairs with IoU >= ``iou``.
+
+    Pairs are accepted greedily in the order (IoU descending, reference id ascending, candidate id
+    ascending); a pair is accepted only if neither object is already matched. For ``iou`` >= 0.5 a pair
+    with IoU > 0.5 is the only qualifying pair of both its objects, so conflicts can arise only between
+    pairs whose IoU is exactly 0.5: one candidate formed by exactly two reference objects of equal area
+    (or the converse). Every conflict involves one object and two partners, so the rule keeps exactly
+    one pair (the one with the smaller partner id) and the matching has maximum cardinality.
+    Returns the boolean mask of accepted pairs.
+    """
+    keep = np.zeros(len(ri), bool)
+    hit = np.flatnonzero(ious >= iou)
+    if not len(hit):
+        return keep
+    order = hit[np.lexsort((ci[hit], ri[hit], -ious[hit]))]
+    used_r, used_c = set(), set()
+    for k in order.tolist():
+        a, b = int(ri[k]), int(ci[k])
+        if a not in used_r and b not in used_c:
+            used_r.add(a); used_c.add(b); keep[k] = True
+    return keep
+
+
 def compare(reference, candidate, iou=0.5, cover=0.2):
-    """Matching at IoU >= ``iou`` (one-to-one for iou >= 0.5) and split/merge counts.
+    """One-to-one matching at IoU >= ``iou`` (see :func:`match` for ties at exactly ``iou``) and split/merge counts.
 
     A reference object is *split* when at least two candidate objects each cover >= ``cover`` of it;
     a candidate object is a *merge* when it covers >= ``cover`` of each of at least two reference objects.
     """
-    require(iou >= 0.5, 'INVALID_PARAMETER', 'iou >= 0.5 keeps matching one-to-one')
+    require(iou >= 0.5, 'INVALID_PARAMETER', 'iou >= 0.5 keeps conflicts to exact ties')
     ri, ci, n, ra, ca = overlap_table(reference, candidate)
     union = np.array([ra[a] + ca[b] for a, b in zip(ri.tolist(), ci.tolist())]) - n
-    hit = n / np.maximum(union, 1) >= iou if len(n) else np.zeros(0, bool)
+    pair_iou = n / np.maximum(union, 1) if len(n) else np.zeros(0)
+    hit = match(ri, ci, pair_iou, iou)
     matched = {int(a): int(b) for a, b in zip(ri[hit], ci[hit])}
-    ious = (n / np.maximum(union, 1))[hit] if len(n) else np.zeros(0)
+    ious = pair_iou[hit]
     split, merge = [], []
     for r_id, area in ra.items():
         sel = ri == r_id

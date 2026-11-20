@@ -245,7 +245,7 @@ def shrink_face(face, threshold=1.0):
     """Zero label boundaries within a face, then pixels within ``threshold`` of background.
 
     The gradient magnitude is computed per pixel for faces of any dimensionality, so 1-pixel
-    faces of 2D images keep their interior (cf. MouseLand/cellpose#1364, #1480).
+    faces of 2D images keep their interior (cf. MouseLand/cellpose#1480).
     """
     plane = np.asarray(face)
     squeezed = plane.reshape([n for n in plane.shape if n != 1] or [1])
