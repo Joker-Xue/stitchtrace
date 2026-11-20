@@ -1,6 +1,6 @@
 # StitchTrace
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23602983.svg)](https://doi.org/10.5281/zenodo.23602983)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23602982.svg)](https://doi.org/10.5281/zenodo.23602982)
 
 **Record, replay and attribute the tile-assembly decisions of tiled instance segmentation — without re-running inference.**
 
@@ -134,7 +134,9 @@ contacts narrower than the shrink margin.
 If you use StitchTrace, please cite the software release:
 
 > Lin, X. (2026). *StitchTrace: inference-free replay and error attribution for tiled instance
-> segmentation* (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23602983
+> segmentation* (Version 1.0.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24384177
+
+All versions: https://doi.org/10.5281/zenodo.23602982 (version 1.0.0: https://doi.org/10.5281/zenodo.23602983).
 
 The recorded bundles and result tables of the accompanying paper are archived as:
 

@@ -9,7 +9,7 @@ authors:
     affiliation: "College of Computer Science and Software Engineering, Hohai University"
     orcid: "https://orcid.org/0009-0008-8616-5346"
 version: 1.0.1
-# doi: the version DOI that Zenodo assigns to 1.0.1 is added after the release
+doi: 10.5281/zenodo.24384177
 # (1.0.0: doi 10.5281/zenodo.23602983, released 2026-10-24 UTC+8 / 2026-10-23 UTC on Zenodo)
 date-released: 2026-11-20
 license: MIT
